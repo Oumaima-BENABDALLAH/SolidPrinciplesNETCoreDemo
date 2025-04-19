@@ -27,7 +27,7 @@ public class UserService
         // Logique pour créer un utilisateur
     }
 }
-``` csharp 
+
 
 ### 2. Open/Closed Principle (OCP)
 **Principe :** Les entités de logiciel doivent être ouvertes à l'extension mais fermées à la modification.
@@ -35,7 +35,7 @@ public class UserService
 **Application :**
 
 Utilisez des interfaces ou des classes abstraites pour permettre l'extension des fonctionnalités sans modifier le code existant.
-
+</pre>
 ```csharp
 public interface INotificationService
 {
