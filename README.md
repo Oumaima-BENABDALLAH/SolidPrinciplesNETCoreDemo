@@ -67,12 +67,6 @@ public class SmsNotificationService : INotificationService
 
 Assurez-vous que les classes dérivées respectent le contrat de la classe de base.
 
-
-// Utilisation
-public void MakeBirdFly(Bird bird)
-{
-    bird.Fly(); // Cela peut causer des problèmes si un oiseau ne peut pas voler
-```
 # 4. Interface Segregation Principle (ISP)
 ** Principe : ** Les clients ne doivent pas être forcés de dépendre d'interfaces qu'ils n'utilisent pas.
 
