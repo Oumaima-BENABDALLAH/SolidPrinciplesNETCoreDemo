@@ -28,7 +28,7 @@ public class UserService
     }
 }
 
-
+```
 ### 2. Open/Closed Principle (OCP)
 **Principe :** Les entités de logiciel doivent être ouvertes à l'extension mais fermées à la modification.
 
@@ -59,7 +59,7 @@ public class SmsNotificationService : INotificationService
         Console.WriteLine($"SMS sent: {message}");
     }
 }
-
+```
 ### 3. Liskov Substitution Principle (LSP)
 ** Principe : ** Les objets d'une classe dérivée doivent pouvoir remplacer les objets de la classe de base sans altérer le comportement du programme.
 
@@ -96,8 +96,8 @@ public class Ostrich : Bird
 public void MakeBirdFly(Bird bird)
 {
     bird.Fly(); // Cela peut causer des problèmes si un oiseau ne peut pas voler
-}
-## 4. Interface Segregation Principle (ISP)
+```
+# 4. Interface Segregation Principle (ISP)
 ** Principe : ** Les clients ne doivent pas être forcés de dépendre d'interfaces qu'ils n'utilisent pas.
 
 *** Application : ***
@@ -130,7 +130,7 @@ public class SmsNotificationService : ISmsService
         Console.WriteLine($"SMS sent: {message}");
     }
 }
-
+```
 ## 5. Dependency Inversion Principle (DIP)
 **Principe :** Les modules de haut niveau ne doivent pas dépendre des modules de bas niveau. Les deux doivent dépendre d'abstractions.
 
