@@ -51,14 +51,6 @@ public class EmailNotificationService : INotificationService
     }
 }
 
-public class SmsNotificationService : INotificationService
-{
-    public void SendNotification(string message)
-    {
-        // Logique pour envoyer un SMS
-        Console.WriteLine($"SMS sent: {message}");
-    }
-}
 ```
 ### 3. Liskov Substitution Principle (LSP)
 ** Principe : ** Les objets d'une classe dérivée doivent pouvoir remplacer les objets de la classe de base sans altérer le comportement du programme.
@@ -79,12 +71,6 @@ public interface IEmailService
 {
     void SendEmail(string message);
 }
-
-public interface ISmsService
-{
-    void SendSms(string message);
-}
-
 public class EmailNotificationService : IEmailService
 {
     public void SendEmail(string message)
@@ -93,13 +79,6 @@ public class EmailNotificationService : IEmailService
     }
 }
 
-public class SmsNotificationService : ISmsService
-{
-    public void SendSms(string message)
-    {
-        Console.WriteLine($"SMS sent: {message}");
-    }
-}
 ```
 ## 5. Dependency Inversion Principle (DIP)
 **Principe :** Les modules de haut niveau ne doivent pas dépendre des modules de bas niveau. Les deux doivent dépendre d'abstractions.
