@@ -66,31 +66,7 @@ public class SmsNotificationService : INotificationService
 *** Application ***
 
 Assurez-vous que les classes dérivées respectent le contrat de la classe de base.
-```csharp
 
-public class Bird
-{
-    public virtual void Fly()
-    {
-        Console.WriteLine("Flying...");
-    }
-}
-
-public class Sparrow : Bird
-{
-    public override void Fly()
-    {
-        Console.WriteLine("Sparrow flying...");
-    }
-}
-
-public class Ostrich : Bird
-{
-    public override void Fly()
-    {
-        throw new NotSupportedException("L'autruche ne peut pas voler.");
-    }
-}
 
 // Utilisation
 public void MakeBirdFly(Bird bird)
